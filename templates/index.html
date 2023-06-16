@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+</head>
+<style>
+    .text-white {
+        color: white
+    }
+</style>
+<body style="background-color: black">
+
+<nav class="navbar" style="background-color: #FFA500; display: flex; align-items: center;">
+    <a class="navbar-brand" style="font-size: 24px;">My Book Recommender</a>
+    <ul class="nav navbar-nav"
+        style="display: flex; list-style: none; margin: 0; padding: 0; margin-left: 30px;">
+        <li style="margin-right: 10px;"><a href="/">Home</a></li>
+        <li style="margin-right: 10px;"><a href="/recommend">Recommend</a></li>
+        <li><a>Contact</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-white" style="font-size: 50px; margin-left: 30px">50 Popular Books</h1>
+        </div>
+
+        {% for i in range(book_name|length) %}
+            {% if loop.index % 5 == 1 %}
+                <div class="row">
+            {% endif %}
+            <div class="col-md-2" style="margin-top: 30px; margin-left: 40px;">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top" src="{{ image[i] }}">
+                        <p class="text-white">{{ book_name[i] }}</p>
+                        <h4 class="text-white">{{ author[i] }}</h4>
+                        <h4 class="text-white">Votes - {{ votes[i] }}</h4>
+                        <h4 class="text-white">Rating - {{ rating[i]|round(1) }}</h4>
+                    </div>
+                </div>
+            </div>
+            {% if loop.index % 5 == 0 or loop.last %}
+                </div>
+                <div class="clearfix"></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>
