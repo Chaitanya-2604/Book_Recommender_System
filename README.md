@@ -54,3 +54,8 @@ Mainly three types of recommendation systems in machine learning based on filter
 * Cosine Similarity
 * Recommendation System
 * seaborn
+ 
+ 
+ 
+![recsys_taxonomy2](https://github.com/Chaitanya-2604/Book_Recommender_System/assets/119853009/697624fd-dad8-4cca-b6f4-ea90e37ed909)
+
