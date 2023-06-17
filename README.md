@@ -21,3 +21,14 @@ The dataset is available on Kaggle. The dataset contains 3 CSV files. The files 
 * Then for each book we are calculating the average rating and the number of ratings. We are also calculating the number of ratings for each user. We are       also calculating the average rating for each user.
 * To get a stronger similarity between the books, we are removing the books which are having less than 50 ratings and the users who are having less than 50     ratings.
 * Generating the unique books and ISBNs list.
+
+
+
+# References 
+
+* Book Recommendation Dataset
+* python
+* Flask
+* Cosine Similarity
+* Recommendation System
+* seaborn
