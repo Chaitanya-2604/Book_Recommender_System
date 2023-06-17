@@ -35,7 +35,11 @@ Mainly three types of recommendation systems in machine learning based on filter
 * Hybrid Filtering (Content Filtering + Collaborative Filtering):
   Both Content Filtering & Collaborative Filtering is used for the purpose. you-tube uses this algorithm for their strong recommendation system.
   
-  
+ 
+ ![recsys_taxonomy2](https://github.com/Chaitanya-2604/Book_Recommender_System/assets/119853009/697624fd-dad8-4cca-b6f4-ea90e37ed909)
+
+ 
+ 
 # Data Cleaning
 
 * The dataset contains less missing values. The missing values samples we dropped from dataset
@@ -57,5 +61,4 @@ Mainly three types of recommendation systems in machine learning based on filter
  
  
  
-![recsys_taxonomy2](https://github.com/Chaitanya-2604/Book_Recommender_System/assets/119853009/697624fd-dad8-4cca-b6f4-ea90e37ed909)
 
